@@ -778,6 +778,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/icl103/ontologies/2024/9/untitled-ontology-4#TestINidv -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/icl103/ontologies/2024/9/untitled-ontology-4#TestINidv">
+        <rdf:type rdf:resource="http://www.semanticweb.org/icl103/ontologies/2024/9/untitled-ontology-4#Live_Event"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/icl103/ontologies/2024/9/untitled-ontology-4#Till_Lindemann -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/icl103/ontologies/2024/9/untitled-ontology-4#Till_Lindemann">
