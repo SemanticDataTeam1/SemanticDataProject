@@ -484,6 +484,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Anthropic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Anthropic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Company"/>
+        <AIOntology:develops rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#ClaudeAI"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#ChatGPT-4o -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#ChatGPT-4o">
@@ -495,6 +504,21 @@
         <AIOntology:Date_Of_Lunch>2022</AIOntology:Date_Of_Lunch>
         <AIOntology:Name>ChatGpt</AIOntology:Name>
         <AIOntology:Version>GPT-4o</AIOntology:Version>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#ClaudeAI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#ClaudeAI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Product"/>
+        <AIOntology:isDevelopedBy rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Anthropic"/>
+        <AIOntology:isOfAIType rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#GenerativeAI"/>
+        <AIOntology:productBasedOnModel rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#LargeLanguageModel"/>
+        <AIOntology:usedInFields rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Social&amp;Entertainment"/>
+        <AIOntology:Date_Of_Lunch rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</AIOntology:Date_Of_Lunch>
+        <AIOntology:Name>Claude</AIOntology:Name>
+        <AIOntology:Version rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</AIOntology:Version>
     </owl:NamedIndividual>
     
 
@@ -538,6 +562,25 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Social&amp;Entertainment">
         <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Field_Of_Usage"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#modelBasedOnModel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#productBasedOnModel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#productBasedOnProduct"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
