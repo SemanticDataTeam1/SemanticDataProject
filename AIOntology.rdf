@@ -1843,6 +1843,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Telecommunications -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Telecommunications">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Application_Domains"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#TensorFlow -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#TensorFlow">
@@ -1955,14 +1963,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Zero_Shot_learning">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Learning_Types"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#elecommunications -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#elecommunications">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Application_Domains"/>
     </owl:Class>
     
 
@@ -2358,6 +2358,7 @@
         <AIOntology:paperIsAbout rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Image_Classification"/>
         <AIOntology:Date_Of_Publication rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2012</AIOntology:Date_Of_Publication>
         <AIOntology:Link>&apos;https://proceedings.neurips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf&apos;</AIOntology:Link>
+        <AIOntology:Name>ImageNet_Classification_with_Deep_Convolutional_Neural_Networks</AIOntology:Name>
     </owl:NamedIndividual>
     
 
@@ -2436,6 +2437,7 @@
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#L1Regularization -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#L1Regularization">
+        <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Optimization_Algorithm"/>
         <owl:sameAs rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#LassoRegression"/>
     </owl:NamedIndividual>
     
