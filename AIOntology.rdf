@@ -1405,7 +1405,7 @@
     
 
 
-    <!-- 
+     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -1441,14 +1441,34 @@
     
 
 
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#CLIP_Contrastive-Language_Image_Pre-Training -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#CLIP_Contrastive-Language_Image_Pre-Training">
+        <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Product"/>
+        <AIOntology:isDevelopedBy rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#OpenAI"/>
+        <AIOntology:usedFor rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Encoding"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#CNN -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#CNN">
         <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#DeepLearning_Task"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Deep_learning_AI"/>
         <AIOntology:achieves rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Image_Classification"/>
         <AIOntology:has_papers rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#ImageNet_Classification_with_Deep_Convolutional_Neural_Networks"/>
         <AIOntology:Definition>A convolutional neural network (CNN) is a type of artificial neural network used primarily for image recognition and processing, due to its ability to recognize patterns in images. A CNN is a powerful tool but requires millions of labelled data points for training.</AIOntology:Definition>
         <AIOntology:NumOfCitations rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">300</AIOntology:NumOfCitations>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#CUDA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#CUDA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#CUDA"/>
+        <AIOntology:isDevelopedBy rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#NVIDIA"/>
     </owl:NamedIndividual>
     
 
@@ -1500,6 +1520,25 @@
     
 
 
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Codex -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Codex">
+        <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Product"/>
+        <AIOntology:isDevelopedBy rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#OpenAI"/>
+        <AIOntology:Date_Of_Launch rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2021</AIOntology:Date_Of_Launch>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Dall-e -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Dall-e">
+        <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Product"/>
+        <AIOntology:isDevelopedBy rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#OpenAI"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Dimensionality_Reduction_Task -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Dimensionality_Reduction_Task">
@@ -1513,6 +1552,14 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Early-Stopping">
         <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Early-Stopping"/>
         <AIOntology:Definition>A regularization technique that stops training a model when it starts to overfit the training data. Early stopping is used to prevent a model from learning the specificities of the training data, which can lead to poor performance on data outside of the training set.</AIOntology:Definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Encoding -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Encoding">
+        <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Encoding"/>
     </owl:NamedIndividual>
     
 
@@ -1545,6 +1592,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#GPT-3.5">
         <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Product"/>
+        <AIOntology:isDevelopedBy rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#OpenAI"/>
         <AIOntology:modelBasedOnModel rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#LargeLanguageModel"/>
     </owl:NamedIndividual>
     
@@ -1686,6 +1734,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#NVIDIA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#NVIDIA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Company"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#OpenAI -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#OpenAI">
@@ -1737,7 +1793,9 @@
 
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Stemming -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Stemming"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Stemming">
+        <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Stemming_Techniques"/>
+    </owl:NamedIndividual>
     
 
 
@@ -1751,7 +1809,9 @@
 
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Tokenization -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Tokenization"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Tokenization">
+        <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#NLP_Techniques"/>
+    </owl:NamedIndividual>
     
 
 
@@ -1759,6 +1819,16 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Unsupervized">
         <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Unsupervised_Learning"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Whisper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Whisper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Product"/>
+        <AIOntology:isDevelopedBy rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#OpenAI"/>
+        <AIOntology:Date_Of_Launch rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</AIOntology:Date_Of_Launch>
     </owl:NamedIndividual>
     
 
@@ -1812,8 +1882,4 @@
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
-
-
-
-<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
-
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
