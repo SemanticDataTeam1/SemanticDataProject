@@ -238,8 +238,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#taskCanBeDoneWith">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#taskedWith"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Complex_Tasks"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Core_ML_Tasks"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#High_Level_Domain_Tasks"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#ML_Algorithms"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Product"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Tools_And_Frameworks"/>
@@ -255,8 +255,8 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Product"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Tools_And_Frameworks"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Training/Optimization_Techniques"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Complex_Tasks"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Core_ML_Tasks"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#High_Level_Domain_Tasks"/>
     </owl:ObjectProperty>
     
 
@@ -408,6 +408,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Antibiotic_Research -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Antibiotic_Research">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Healthcare"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Application_Domains -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Application_Domains"/>
@@ -454,6 +462,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Cancer_Detection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Cancer_Detection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Healthcare"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#CatBoost -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#CatBoost">
@@ -492,10 +508,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Complex_Tasks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Complex_Tasks"/>
+    
+
+
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#ComputerVision_Task -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#ComputerVision_Task">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#High_Level_Domain_Tasks"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Complex_Tasks"/>
     </owl:Class>
     
 
@@ -560,10 +582,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Decission_Making_Task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Decission_Making_Task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Complex_Tasks"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#DeepLearning_Task -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#DeepLearning_Task">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#High_Level_Domain_Tasks"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Complex_Tasks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Deep_Learning_Algorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Deep_Learning_Algorithm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Prediction_Algorithms"/>
     </owl:Class>
     
 
@@ -580,14 +618,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Early-Stopping">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Training/Optimization_Techniques"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Edge_AI -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Edge_AI">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#High_Level_Domain_Tasks"/>
     </owl:Class>
     
 
@@ -628,6 +658,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Ensemble_Optimization_Algorithms">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Optimization_Algorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Evolutionay_Escape_Mutations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Evolutionay_Escape_Mutations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#DeepLearning_Task"/>
     </owl:Class>
     
 
@@ -704,14 +742,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Generative_AI -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Generative_AI">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#High_Level_Domain_Tasks"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Gradient_Boosting -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Gradient_Boosting">
@@ -741,12 +771,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Healthcare">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Application_Domains"/>
     </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#High_Level_Domain_Tasks -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#High_Level_Domain_Tasks"/>
     
 
 
@@ -952,6 +976,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Media_Generation_Task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Media_Generation_Task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Complex_Tasks"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Media_and_Entertainment -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Media_and_Entertainment">
@@ -971,7 +1003,7 @@
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#NLP_Task -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#NLP_Task">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#High_Level_Domain_Tasks"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Complex_Tasks"/>
     </owl:Class>
     
 
@@ -1102,6 +1134,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Pathogenic_Evolution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Pathogenic_Evolution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Healthcare"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Pre_Processing_Task -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Pre_Processing_Task"/>
@@ -1170,14 +1210,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Reinforcement_Learning_AI -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Reinforcement_Learning_AI">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#High_Level_Domain_Tasks"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Researcher -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Researcher"/>
@@ -1212,14 +1244,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#SGE_Stochastic_Gradient_Descent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Optimization_Algorithm"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#SSL_Self-Supervised_Learning_AI -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#SSL_Self-Supervised_Learning_AI">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#High_Level_Domain_Tasks"/>
     </owl:Class>
     
 
@@ -1260,6 +1284,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Semi-Supervised_Learning">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Supervision"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Sequence_Evolution_Escape_Task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Sequence_Evolution_Escape_Task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Complex_Tasks"/>
     </owl:Class>
     
 
@@ -1307,14 +1339,6 @@
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Supervision -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Supervision"/>
-    
-
-
-    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Symbolic_AI -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Symbolic_AI">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#High_Level_Domain_Tasks"/>
-    </owl:Class>
     
 
 
@@ -1392,14 +1416,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Unsupervised_Learning">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Supervision"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#XAI_Explainable_AI -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#XAI_Explainable_AI">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#High_Level_Domain_Tasks"/>
     </owl:Class>
     
 
@@ -1666,6 +1682,17 @@
     
 
 
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#EVEscape -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#EVEscape">
+        <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Deep_Learning_Algorithm"/>
+        <AIOntology:taskedWith rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Evolutionary_Escape_Mutations"/>
+        <AIOntology:Date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2021</AIOntology:Date>
+        <AIOntology:Link>https://nature.com/articles/s41586-023-06617-0?error=cookies_not_supported&amp;code=3b6f99ba-3fae-47b8-a801-aedf39926116</AIOntology:Link>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Early-Stopping -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Early-Stopping">
@@ -1679,6 +1706,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Encoding">
         <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Encoding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Evolutionary_Escape_Mutations -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Evolutionary_Escape_Mutations">
+        <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Evolutionay_Escape_Mutations"/>
+        <AIOntology:taskCanBeDoneWith rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#EVEscape"/>
     </owl:NamedIndividual>
     
 
@@ -1740,7 +1776,7 @@
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#GenerativeAI -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#GenerativeAI">
-        <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Generative_AI"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Media_Generation_Task"/>
     </owl:NamedIndividual>
     
 
@@ -1979,6 +2015,14 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Loss_Function"/>
         <AIOntology:isComponentOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#NNs"/>
         <AIOntology:optimizes rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#NNs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Media_Creation_Task -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Media_Creation_Task">
+        <AIOntology:taskCanBeDoneWith rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#GenerativeAI"/>
     </owl:NamedIndividual>
     
 
