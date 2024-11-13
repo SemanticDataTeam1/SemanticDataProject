@@ -129,6 +129,7 @@
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#has_papers -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#has_papers">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#paperIsAbout"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Researcher"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Paper"/>
@@ -150,13 +151,30 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#isComponentOf">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#isComposedOf"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#isEnsembling"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Optimization_Algorithm"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Prediction_Algorithm"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Prediction_Algorithm"/>
     </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#isComposedOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#isComposedOf"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#isComposedOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Prediction_Algorithm"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Optimization_Algorithm"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Prediction_Algorithm"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#isDeployed -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#isDeployed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#ML_Algorithm"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Product"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Deployment"/>
+    </owl:ObjectProperty>
     
 
 
@@ -192,6 +210,15 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Application_Domain"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Location"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Ministry"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#isOfLearningType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#isOfLearningType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Prediction_Algorithm"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Learning_Type"/>
     </owl:ObjectProperty>
     
 
@@ -247,22 +274,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#isRelatedTo -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#isRelatedTo">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#ML_Algorithm"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Complex_Task"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Core_ML_Task"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#isResearchedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#isResearchedBy">
@@ -274,6 +285,23 @@
                     <rdf:Description rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Company"/>
                     <rdf:Description rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Division"/>
                     <rdf:Description rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Researcher"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#isSubTaskOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#isSubTaskOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#ML_Algorithm"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Complex_Task"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Core_ML_Task"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -362,12 +390,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#supportsLearningIn -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#supportsLearningIn"/>
-    
-
-
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#taskCanBeDoneWith -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#taskCanBeDoneWith">
@@ -387,16 +409,6 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Product"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Tool_And_Framework"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Training/Optimization_Technique"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Complex_Task"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Core_ML_Task"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#usedFor -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#usedFor">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#ML_Algorithm"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Complex_Task"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Core_ML_Task"/>
     </owl:ObjectProperty>
@@ -794,6 +806,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Deployment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Deployment"/>
+    
+
+
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Dimensionality_Reduction -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Dimensionality_Reduction">
@@ -822,6 +840,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Early-Stopping">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Training/Optimization_Technique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Edge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Edge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Deployment"/>
     </owl:Class>
     
 
@@ -944,10 +970,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Federated_Learning -->
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Federated -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Federated_Learning">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Learning_Type"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Federated">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Deployment"/>
     </owl:Class>
     
 
@@ -1160,6 +1186,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Linear_Regression">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Prediction_Algorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Locally -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Locally">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Deployment"/>
     </owl:Class>
     
 
@@ -1744,6 +1778,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#WorldWideWeb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#WorldWideWeb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Deployment"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#XGBoost -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#XGBoost">
@@ -1845,7 +1887,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#CLIP_Contrastive-Language_Image_Pre-Training">
         <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Product"/>
         <AIOntology:isDevelopedBy rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#OpenAI"/>
-        <AIOntology:usedFor rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Encoding"/>
+        <AIOntology:taskedWith rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Encoding"/>
     </owl:NamedIndividual>
     
 
@@ -2190,7 +2232,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#ComputerVision_Task"/>
         <AIOntology:achievedWith rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#CNN"/>
         <AIOntology:has_papers rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#ImageNet_Classification_with_Deep_Convolutional_Neural_Networks"/>
-        <AIOntology:isRelatedTo rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Classification_Task"/>
+        <AIOntology:isSubTaskOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Classification_Task"/>
     </owl:NamedIndividual>
     
 
@@ -2250,9 +2292,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#LDA">
         <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#LDA_Linear_Discriminant_Analysis"/>
+        <AIOntology:achieves rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Classification_Task"/>
         <AIOntology:achieves rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Dimensionality_Reduction_Task"/>
         <AIOntology:hasSupervisionType rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Supervized"/>
-        <AIOntology:usedFor rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Classification_Task"/>
         <AIOntology:Definition>Linear discriminant analysis (LDA) is a machine learning technique that uses dimensionality reduction to separate multiple classes in a dataset. It&apos;s often used in the pre-processing step of machine learning applications and pattern classification.</AIOntology:Definition>
     </owl:NamedIndividual>
     
