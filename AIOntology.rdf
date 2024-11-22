@@ -154,6 +154,17 @@
     
 
 
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#hasCEO -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#hasCEO">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#isCEOof"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Organization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Person"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#hasMetric -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#hasMetric">
@@ -195,6 +206,15 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#isCEOof -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#isCEOof">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#CEO"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Organization"/>
     </owl:ObjectProperty>
     
 
@@ -1155,9 +1175,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#HuggingFace -->
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Hugging_Face -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#HuggingFace">
+    <owl:Class rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Hugging_Face">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Framework"/>
     </owl:Class>
     
@@ -2531,7 +2551,7 @@
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#HuggingFace -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#HuggingFace">
-        <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#HuggingFace"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Hugging_Face"/>
     </owl:NamedIndividual>
     
 
