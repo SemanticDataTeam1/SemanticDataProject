@@ -1,0 +1,33 @@
+Set column to be from A to N
+set the start row number to 2
+
+Step 1 import all researchers:
+Individual: @E*
+  Types: Researcher
+  Facts: Name @E*
+
+Step 2 import all papers:
+Individual: @B*
+  Types: Paper
+  Facts: Link @A*,
+  Name @B*,
+  Abstract @C*,
+  Date_Of_Publication @D*,
+  hasAuthor @E*,
+  NumOfCitations @F*,
+  paperIsAbout @G**
+
+Don't need?
+Individual: @E*
+  Types: Researcher
+  Facts: authorHasPaper @B*
+
+Don't need:
+Individual: @B*
+  Types: Paper
+  Facts: Link @A*,
+  Name @B*,
+  Abstract @C*,
+  Date_Of_Publication @D*,
+  hasAuthor @E*,
+  NumOfCitations @F*
