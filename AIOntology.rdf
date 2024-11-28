@@ -8268,12 +8268,20 @@
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#ComputerVision_Task -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#ComputerVision_Task">
+        <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Computer_Vision_Task"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Computer_Vision_Task"/>
         <AIOntology:subjectHasPaper rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Barlow_twins_Self_supervised_learning_via_redundancy_reduction"/>
         <AIOntology:subjectHasPaper rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Densecap_Fully_convolutional_localization_networks_for_dense_captioning"/>
         <AIOntology:subjectHasPaper rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Reading_digits_in_natural_images_with_unsupervised_feature_learning"/>
         <AIOntology:subjectHasPaper rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Structural_rnn_Deep_learning_on_spatio_temporal_graphs"/>
         <AIOntology:subjectHasPaper rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#The_discipline_of_machine_learning"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Computer_Vision_Task -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Computer_Vision_Task"/>
     
 
 
@@ -12084,18 +12092,11 @@
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Energy_And_Utilities -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Energy_And_Utilities">
+        <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Energy_and_Utilities"/>
         <AIOntology:subjectHasPaper rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#A_fast_learning_algorithm_for_deep_belief_nets"/>
         <AIOntology:subjectHasPaper rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Reinforcement_learning_is_direct_adaptive_optimal_control"/>
         <AIOntology:subjectHasPaper rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Reinforcement_learning_with_deep_energy_based_policies"/>
         <AIOntology:subjectHasPaper rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Topological_cell_clustering_in_the_ATLAS_calorimeters_and_its_performance_in_LHC_Run_1"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Energy_and_Utilities -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Energy_and_Utilities">
-        <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Energy_and_Utilities"/>
     </owl:NamedIndividual>
     
 
@@ -34850,6 +34851,8 @@ designed to solve the generative modeling problem. The goal of a generative mode
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Supervised_Learning -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Supervised_Learning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Supervised_Learning"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Supervized_Learning"/>
         <AIOntology:subjectHasPaper rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Adversarial_training_methods_for_semi_supervised_text_classification"/>
         <AIOntology:subjectHasPaper rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#D4rl_Datasets_for_deep_data_driven_reinforcement_learning"/>
         <AIOntology:subjectHasPaper rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Deep_sets"/>
@@ -34861,6 +34864,12 @@ designed to solve the generative modeling problem. The goal of a generative mode
         <AIOntology:subjectHasPaper rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Universal_value_function_approximators"/>
         <AIOntology:subjectHasPaper rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Why_does_unsupervised_pre_training_help_deep_learning_"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Supervized_Learning -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Supervized_Learning"/>
     
 
 
@@ -37425,10 +37434,18 @@ designed to solve the generative modeling problem. The goal of a generative mode
     <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Unsupervised_Learning -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Unsupervised_Learning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Unsupervised_Learning"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Unsupervized_Learning"/>
         <AIOntology:subjectHasPaper rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Input_Generalization_in_Delayed_Reinforcement_Learning_An_Algorithm_and_Performance_Comparisons_"/>
         <AIOntology:subjectHasPaper rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Reinforcement_learning_with_unsupervised_auxiliary_tasks"/>
         <AIOntology:subjectHasPaper rdf:resource="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Trajectory_clustering_with_mixtures_of_regression_models"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Unsupervized_Learning -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/crist/ontologies/2024/9/AIOntology#Unsupervized_Learning"/>
     
 
 
